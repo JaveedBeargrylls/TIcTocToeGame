@@ -25,8 +25,20 @@ public class TicTacToeGame {
 		
 		return inputletter.next().toUpperCase().charAt(0);
 	}
+	
+	// Creation of gameBorad and to Show it UC -3
+	
+	private static void showboard(char[] board) {
+		System.out.println("\n\n\tGame Board");
+		System.out.println("\t"+board[1] + " | " + board[2] + " | " + board[3]);
+		System.out.println("\t"+"--" + "+" + "---" + "+" + "--");
+		System.out.println("\t"+board[4] + " | " + board[5] + " | " + board[6]);
+		System.out.println("\t"+"--" + "+" + "---" + "+" + "--");
+		System.out.println("\t"+board[7] + " | " + board[8] + " | " + board[9]);
+		
+	}
 
-	// called from main 
+		/* 	main 	*/
 	
 	public static void main(String[] args) {
 		System.out.println("\tTicTacToe Game");
@@ -38,6 +50,7 @@ public class TicTacToeGame {
 		// Printing the userplay and computer play to verify
 		System.out.println("userplay = "+userplay);
 		System.out.println("computerplay = "+computerplay);
+		showboard(board);
 	}
 }
 
